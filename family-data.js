@@ -11,7 +11,7 @@ window.FAMILY_TREE = {
     role: "Family root",
     unions: [
       {
-        spouse: { id: "first-wife", name: "Name not remembered", role: "First wife · name not remembered", placeholder: true },
+        spouse: { id: "first-wife", name: "Name not remembered", role: "First wife · name not remembered", gender: "girl", placeholder: true },
         children: [
           {
             id: "robert-oriabor-olumese",
@@ -21,7 +21,7 @@ window.FAMILY_TREE = {
             status: "late",
             unions: [
               {
-                spouse: { id: "lucy", name: "Lucy", role: "Wife of Robert Oriabor" },
+                spouse: { id: "lucy", name: "Lucy", role: "Wife of Robert Oriabor", gender: "girl" },
                 children: [
                   { id: "rita-oriabor", name: "Rita Oriabor", role: "Daughter", gender: "girl", unions: [] },
                   {
@@ -31,7 +31,7 @@ window.FAMILY_TREE = {
                     gender: "boy",
                     unions: [
                       {
-                        spouse: { id: "maria", name: "Maria", role: "Wife of Pat Oriabor" },
+                        spouse: { id: "maria", name: "Maria", role: "Wife of Pat Oriabor", gender: "girl" },
                         children: [
                           {
                             id: "osemega-oriabor",
@@ -40,7 +40,7 @@ window.FAMILY_TREE = {
                             role: "Child of Pat Oriabor",
                             unions: [
                               {
-                                spouse: { id: "dorathy", name: "Dorathy", role: "Wife of Osemega Oriabor" },
+                                spouse: { id: "dorathy", name: "Dorathy", role: "Wife of Osemega Oriabor", gender: "girl" },
                                 children: [
                                   { id: "samuel-markblessing-oriabor", gender: "boy", name: "Samuel MarkBlessing Oriabor", role: "Child of Osemega Oriabor", unions: [] }
                                 ]
@@ -59,7 +59,7 @@ window.FAMILY_TREE = {
                     gender: "girl",
                     unions: [
                       {
-                        spouse: { id: "christopher-okosodo", name: "Christopher Okosodo", role: "Husband of Margaret Oriabor" },
+                        spouse: { id: "christopher-okosodo", name: "Christopher Okosodo", role: "Husband of Margaret Oriabor", gender: "boy" },
                         children: [
                           {
                             id: "vincent-okosodo",
@@ -67,7 +67,7 @@ window.FAMILY_TREE = {
                             role: "Son",
                             gender: "boy",
                             unions: [
-                              { spouse: { id: "jessica-omodu", name: "Jessica Omodu", role: "Wife of Vincent Okosodo" }, children: [] }
+                              { spouse: { id: "jessica-omodu", name: "Jessica Omodu", role: "Wife of Vincent Okosodo", gender: "girl" }, children: [] }
                             ]
                           },
                           {
@@ -77,7 +77,7 @@ window.FAMILY_TREE = {
                             gender: "girl",
                             unions: [
                               {
-                                spouse: { id: "ndukwo-ogbuja", name: "Ndukwo Ogbuja", role: "Husband of Jennifer Okosodo" },
+                                spouse: { id: "ndukwo-ogbuja", name: "Ndukwo Ogbuja", role: "Husband of Jennifer Okosodo", gender: "boy" },
                                 children: [
                                   { id: "michelle-ndukwo-ogbuja", name: "Michelle Ndukwo_Ogbuja", role: "Daughter", gender: "girl", unions: [] },
                                   { id: "danielle-ndukwo-ogbuja", name: "Danielle Ndukwo-Ogbuja", role: "Daughter", gender: "girl", unions: [] }
@@ -104,7 +104,7 @@ window.FAMILY_TREE = {
             gender: "girl",
             unions: [
               {
-                spouse: { id: "amedu", name: "Amedu", role: "Husband of Ewohon" },
+                spouse: { id: "amedu", name: "Amedu", role: "Husband of Ewohon", gender: "boy" },
                 children: [
                   { id: "christopher-amedu", name: "Christopher Amedu", role: "Son", gender: "boy", unions: [] },
                   { id: "friday-amedu", name: "Friday Amedu", role: "Son", gender: "boy", unions: [] },
@@ -117,7 +117,7 @@ window.FAMILY_TREE = {
         ]
       },
       {
-        spouse: { id: "cowesu", name: "Cowesu", role: "Second wife · Late", status: "late" },
+        spouse: { id: "cowesu", name: "Cowesu", role: "Second wife · Late", gender: "girl", status: "late" },
         children: [
           {
             id: "agberonkhe",
@@ -126,7 +126,7 @@ window.FAMILY_TREE = {
             gender: "girl",
             unions: [
               {
-                spouse: { id: "agberonkhe-husband", name: "Name not known", role: "Husband · name not known", placeholder: true },
+                spouse: { id: "agberonkhe-husband", name: "Name not known", role: "Husband · name not known", gender: "boy", placeholder: true },
                 children: [
                   { id: "khiafe", name: "Khiafe", role: "Son", gender: "boy", unions: [] },
                   { id: "william", name: "William", role: "Son · Late", gender: "boy", status: "late", unions: [] },
@@ -143,7 +143,7 @@ window.FAMILY_TREE = {
             gender: "boy",
             unions: [
               {
-                spouse: { id: "richard-wife", name: "Name not known", role: "Wife · name not known", placeholder: true },
+                spouse: { id: "richard-wife", name: "Name not known", role: "Wife · name not known", gender: "girl", placeholder: true },
                 children: [
                   { id: "dele-olumese", name: "Dele Olumese", role: "Daughter", gender: "girl", unions: [] },
                   { id: "friday-olumese", name: "Friday Olumese", role: "Son", gender: "boy", unions: [] },
@@ -159,7 +159,7 @@ window.FAMILY_TREE = {
             gender: "boy",
             unions: [
               {
-                spouse: { id: "samson-wife", name: "Name not known", role: "Wife · name not known", placeholder: true },
+                spouse: { id: "samson-wife", name: "Name not known", role: "Wife · name not known", gender: "girl", placeholder: true },
                 children: [
                   { id: "lucky-olumese", name: "Lucky Olumese", role: "Son", gender: "boy", unions: [] },
                   { id: "faith-olumese", name: "Faith Olumese", role: "Daughter", gender: "girl", unions: [] },
@@ -176,3 +176,6 @@ window.FAMILY_TREE = {
     ]
   }
 };
+
+
+
