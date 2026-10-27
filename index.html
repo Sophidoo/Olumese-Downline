@@ -36,6 +36,11 @@
           <div><p class="eyebrow">THE FAMILY, AT A GLANCE</p><h2 id="tree-heading">Family tree</h2><p class="generation-note">Olumese’s children are the first generation.</p></div>
           <div class="tree-tools">
             <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a family member" autocomplete="off" /><kbd>↵</kbd></label>
+            <div class="zoom-control" role="group" aria-label="Zoom the family tree">
+              <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+              <output id="zoom-level" for="zoom-out zoom-in">100%</output>
+              <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+            </div>
             <button id="expand-all" class="quiet-button" type="button">Collapse branches</button>
           </div>
         </div>

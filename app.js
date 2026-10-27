@@ -7,6 +7,7 @@
   const generationCount = document.querySelector("#generation-count");
   const branchCount = document.querySelector("#branch-count");
   let expanded = true;
+  let zoomLevel = 1;
   let allPeople = [];
 
   function visit(person, depth, parentName = "") {
@@ -132,6 +133,13 @@
     tree.classList.toggle("is-collapsed", !expanded);
     event.currentTarget.textContent = expanded ? "Collapse branches" : "Expand all";
   });
+  function setZoom(nextZoom) {
+    zoomLevel = Math.max(0.5, Math.min(1.5, Math.round(nextZoom * 10) / 10));
+    tree.style.zoom = String(zoomLevel);
+    document.querySelector("#zoom-level").value = `${Math.round(zoomLevel * 100)}%`;
+  }
+  document.querySelector("#zoom-out").addEventListener("click", () => setZoom(zoomLevel - 0.1));
+  document.querySelector("#zoom-in").addEventListener("click", () => setZoom(zoomLevel + 0.1));
   document.querySelector(".dialog-close").addEventListener("click", () => dialog.close());
   dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
   render();
