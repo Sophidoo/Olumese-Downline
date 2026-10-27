@@ -1,6 +1,6 @@
 # Olumese Family Tree
 
-A dependency-free family tree website built with HTML, CSS, and JavaScript. It works as a local static site and can also be deployed to any static web host.
+A dependency-free family tree website starting from my great grand father, built with HTML, CSS, and JavaScript. It works as a local static site and can also be deployed to any static web host.
 
 ## Open the site
 
