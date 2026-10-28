@@ -85,10 +85,16 @@
       const children = union.children || [];
       if (children.length) node.classList.add("has-downline");
       const couple = document.createElement("div");
-      couple.className = "couple-pair";
-      couple.append(personCard(person, isRoot ? "Family root" : "", children.length ? node : null));
-      couple.append(personCard(union.spouse || { name: "Spouse not listed", placeholder: true }, "Spouse"));
-      node.append(couple);
+      if (union.spouse) {
+        couple.className = "couple-pair";
+        couple.append(personCard(person, isRoot ? "Family root" : "", children.length ? node : null));
+        couple.append(personCard(union.spouse, "Spouse"));
+        node.append(couple);
+      } else {
+        couple.className = "single-parent";
+        couple.append(personCard(person, isRoot ? "Family root" : "", children.length ? node : null));
+        node.append(couple);
+      }
       if (children.length) {
         const downline = document.createElement("div");
         downline.className = "downline";

@@ -23,7 +23,87 @@ window.FAMILY_TREE = {
               {
                 spouse: { id: "lucy", name: "Lucy", role: "Wife of Robert Oriabor", gender: "girl" },
                 children: [
-                  { id: "rita-oriabor", name: "Rita Oriabor", role: "Daughter", gender: "girl", unions: [] },
+                  {
+                    id: "rita-oriabor",
+                    name: "Rita Oriabor",
+                    role: "Daughter",
+                    gender: "girl",
+                    unions: [
+                      {
+                        spouse: { id: "joseph-oseghale", name: "Joseph Oseghale", role: "Husband of Rita Oriabor", gender: "boy" },
+                        children: [
+                          {
+                            id: "rita-oseghale",
+                            name: "Rita Oseghale",
+                            role: "Daughter",
+                            gender: "girl",
+                            unions: [
+                              {
+                                spouse: { id: "raymond-tabet", name: "Raymond Tabet", role: "Husband of Rita Oseghale", gender: "boy" },
+                                children: [
+                                  { id: "isabel-tabet", name: "Isabel Tabet", role: "Daughter", gender: "girl", unions: [] },
+                                  { id: "alysar-tabet", name: "Alysar Tabet", role: "Daughter", gender: "girl", unions: [] }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            id: "aima-oseghale",
+                            name: "Aima Oseghale",
+                            role: "Daughter",
+                            gender: "girl",
+                            unions: [
+                              {
+                                spouse: { id: "osaze-iyamu", name: "Osaze Iyamu", role: "Spouse of Aima Oseghale" },
+                                children: [
+                                  { id: "nathan-iyamu", name: "Nathan Iyamu", role: "Child of Aima Oseghale", unions: [] },
+                                  { id: "stefania-iyamu", name: "Stefania Iyamu", role: "Child of Aima Oseghale", unions: [] }
+                                ]
+                              }
+                            ]
+                          },
+                          { id: "joseph-oseghale-child", name: "Joseph Oseghale", role: "Son", gender: "boy", unions: [] },
+                          { id: "matthew-oseghale", name: "Matthew Oseghale", role: "Son", gender: "boy", unions: [] },
+                          { id: "emma-oseghale", name: "Emma Oseghale", role: "Son", gender: "boy", unions: [] },
+                          { id: "margaret-oseghale", name: "Margaret Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "cordia-oseghale", name: "Cordia Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "fidelia-oseghale", name: "Fidelia Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "ivadieho-oseghale", name: "Ivadieho Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "florence-oseghale", name: "Florence Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          {
+                            id: "churchill-oseghale",
+                            name: "Churchill Oseghale",
+                            role: "Son",
+                            gender: "boy",
+                            unions: [
+                              {
+                                spouse: { id: "treasure", name: "Treasure", role: "Spouse of Churchill Oseghale" },
+                                children: [
+                                  { id: "tremere-churchill", name: "Tremere Churchill", role: "Son", gender: "boy", unions: [] },
+                                  { id: "treshaun-churchill", name: "Treshaun Churchill", role: "Son", gender: "boy", unions: [] }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            id: "ehis-oseghale",
+                            name: "Ehis Oseghale",
+                            role: "Daughter",
+                            gender: "girl",
+                            unions: [
+                              {
+                                spouse: null,
+                                children: [
+                                  { id: "uriel", name: "Uriel", role: "Daughter", gender: "girl", unions: [] }
+                                ]
+                              }
+                            ]
+                          },
+                          { id: "michael-oseghale", name: "Michael Oseghale", role: "Son", gender: "boy", unions: [] }
+                        ]
+                      }
+                    ]
+                  },
                   {
                     id: "pat-oriabor",
                     name: "Pat Oriabor",
@@ -91,8 +171,34 @@ window.FAMILY_TREE = {
                     ]
                   },
                   { id: "saturday-oriabor", name: "Saturday Oriabor", role: "Son · Late", gender: "boy", status: "late", unions: [] },
-                  { id: "anthony-oriabor", name: "Anthony Oriabor", role: "Son · Late", gender: "boy", status: "late", unions: [] },
-                  { id: "flora-oriabor", name: "Flora Oriabor", role: "Daughter", gender: "girl", unions: [] }
+                  {
+                    id: "anthony-oriabor",
+                    name: "Anthony Oriabor",
+                    role: "Son · Late",
+                    gender: "boy",
+                    status: "late",
+                    unions: [
+                      { spouse: { id: "loveth", name: "Loveth", role: "Wife of Anthony Oriabor", gender: "girl" }, children: [] }
+                    ]
+                  },
+                  {
+                    id: "flora-oriabor",
+                    name: "Flora Oriabor",
+                    role: "Daughter",
+                    gender: "girl",
+                    unions: [
+                      {
+                        spouse: { id: "godwin-ikheola", name: "Godwin Ikheola", role: "Husband of Flora Oriabor", gender: "boy" },
+                        children: [
+                          { id: "ofure-ikheola", name: "Ofure Ikheola", role: "Son", gender: "boy", unions: [] },
+                          { id: "osereme-ikheola-perpetual", name: "Osereme Ikheola Perpetual", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "ebosetale-ikheola-paul", name: "Ebosetale Ikheola Paul", role: "Son", gender: "boy", unions: [] },
+                          { id: "ehizojie-ikheola-john", name: "Ehizojie Ikheola John", role: "Son", gender: "boy", unions: [] },
+                          { id: "oseluese-ikheola-godwin", name: "Oseluese Ikheola Godwin", role: "Son", gender: "boy", unions: [] }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
