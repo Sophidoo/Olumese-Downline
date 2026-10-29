@@ -83,25 +83,25 @@
     if (unions.length === 1) {
       const union = unions[0];
       const children = union.children || [];
-      if (children.length) node.classList.add("has-downline");
-      const couple = document.createElement("div");
-      if (union.spouse) {
-        couple.className = "couple-pair";
-        couple.append(personCard(person, isRoot ? "Family root" : "", children.length ? node : null));
-        couple.append(personCard(union.spouse, "Spouse"));
-        node.append(couple);
-      } else {
-        couple.className = "single-parent";
-        couple.append(personCard(person, isRoot ? "Family root" : "", children.length ? node : null));
-        node.append(couple);
-      }
-      if (children.length) {
+      const hasDownline = Boolean(union.spouse) || children.length > 0;
+      if (hasDownline) node.classList.add("has-downline");
+      if (union.spouse) node.classList.add("has-spouse");
+      node.append(personCard(person, isRoot ? "Family root" : "", hasDownline ? node : null));
+      if (hasDownline) {
         const downline = document.createElement("div");
-        downline.className = "downline";
-        const childWrap = document.createElement("div");
-        childWrap.className = "children-row";
-        children.forEach((child) => childWrap.append(renderPerson(child)));
-        downline.append(childWrap);
+        downline.className = "downline single-union-downline";
+        if (union.spouse) {
+          const spouseRow = document.createElement("div");
+          spouseRow.className = "couple-row";
+          spouseRow.append(personCard(union.spouse, "Spouse"));
+          downline.append(spouseRow);
+        }
+        if (children.length) {
+          const childWrap = document.createElement("div");
+          childWrap.className = "children-row";
+          children.forEach((child) => childWrap.append(renderPerson(child)));
+          downline.append(childWrap);
+        }
         node.append(downline);
       }
       return node;

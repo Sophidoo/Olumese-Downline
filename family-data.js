@@ -62,14 +62,25 @@ window.FAMILY_TREE = {
                               }
                             ]
                           },
-                          { id: "joseph-oseghale-child", name: "Joseph Oseghale", role: "Son", gender: "boy", unions: [] },
+                          { id: "joseph-oseghale-child", name: "Joseph Oseghale", role: "Son", gender: "boy", unions: [
+                            {
+                              spouse: { id: "hillary", name: "Hillary", role: "Spouse of Joseph Oseghale" },
+                              children: []
+                            }
+                          ] },
                           { id: "matthew-oseghale", name: "Matthew Oseghale", role: "Son", gender: "boy", unions: [] },
-                          { id: "emma-oseghale", name: "Emma Oseghale", role: "Son", gender: "boy", unions: [] },
+                          { id: "emma-oseghale", name: "Emma Oseghale", role: "Son", gender: "boy", unions: [{
+                            spouse: { id: "salama", name: "Salama", role: "Spouse of Emmanuel Oseghale" },
+                            children: []
+                          }] },
                           { id: "margaret-oseghale", name: "Margaret Oseghale", role: "Daughter", gender: "girl", unions: [] },
                           { id: "cordia-oseghale", name: "Cordia Oseghale", role: "Daughter", gender: "girl", unions: [] },
                           { id: "fidelia-oseghale", name: "Fidelia Oseghale", role: "Daughter", gender: "girl", unions: [] },
                           { id: "ivadieho-oseghale", name: "Ivadieho Oseghale", role: "Daughter", gender: "girl", unions: [] },
-                          { id: "florence-oseghale", name: "Florence Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "florence-oseghale", name: "Florence Oseghale", role: "Daughter", gender: "girl", unions: [{
+                            spouse: { id: "festus", name: "Festus", role: "Husband of Florence Oseghale" },
+                            children: []
+                          }] },
                           {
                             id: "churchill-oseghale",
                             name: "Churchill Oseghale",
