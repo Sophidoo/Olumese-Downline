@@ -11,7 +11,7 @@ window.FAMILY_TREE = {
     role: "Family root",
     unions: [
       {
-        spouse: { id: "first-wife", name: "Name not remembered", role: "First wife · name not remembered", gender: "girl", placeholder: true },
+        spouse: { id: "first-wife", name: "Name not remembered", role: "First wife · name not remembered",status: "late", gender: "girl", placeholder: true },
         children: [
           {
             id: "robert-oriabor-olumese",
@@ -21,7 +21,7 @@ window.FAMILY_TREE = {
             status: "late",
             unions: [
               {
-                spouse: { id: "lucy", name: "Lucy", role: "Wife of Robert Oriabor", gender: "girl" },
+                spouse: { id: "lucy", name: "Lucy", role: "Wife of Robert Oriabor",status: "late", gender: "girl" },
                 children: [
                   {
                     id: "rita-oriabor",
@@ -76,7 +76,7 @@ window.FAMILY_TREE = {
                           { id: "margaret-oseghale", name: "Margaret Oseghale", role: "Daughter", gender: "girl", unions: [] },
                           { id: "cordia-oseghale", name: "Cordia Oseghale", role: "Daughter", gender: "girl", unions: [] },
                           { id: "fidelia-oseghale", name: "Fidelia Oseghale", role: "Daughter", gender: "girl", unions: [] },
-                          { id: "ivadieho-oseghale", name: "Ivadieho Oseghale", role: "Daughter", gender: "girl", unions: [] },
+                          { id: "ibhade-oseghale", name: "Ibhade Oseghale", role: "Daughter", gender: "girl", unions: [] },
                           { id: "florence-oseghale", name: "Florence Oseghale", role: "Daughter", gender: "girl", unions: [{
                             spouse: { id: "festus", name: "Festus", role: "Husband of Florence Oseghale" },
                             children: []
@@ -219,6 +219,7 @@ window.FAMILY_TREE = {
             name: "Ewohon Olumese",
             role: "Daughter",
             gender: "girl",
+            status: "late",
             unions: [
               {
                 spouse: { id: "amedu", name: "Amedu", role: "Husband of Ewohon", gender: "boy" },
